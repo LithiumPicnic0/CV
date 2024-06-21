@@ -1,88 +1,122 @@
+/* CSS général pour tous les écrans */
+
 body {
-	background-image: url('https://wallpapertag.com/wallpaper/full/9/2/5/156629-gorgerous-black-textured-background-1920x1200-for-lockscreen.jpg');
-	color: #FFDEAD;
-	font-family: Cambria, serif;
-	margin: 0;
-	padding: 0;
-  }
-  
-  h1 {
-	font-family: Helvetica, sans-serif;
-	color: #FFDEAD;
-	text-align: center;
-	font-size: 2.5em;
-	margin-bottom: 20px;
-  }
-  
-  h2, h3, h4, legend {
-	color: #FFDEAD;
-	font-family: Helvetica, sans-serif;
-  }
-  
-  fieldset {
-	border: 2px solid rgb(59, 163, 255);
-	padding: 20px;
-	background: rgba(0, 0, 0, 0.5);
-	margin: 10px; /* Ajustez la marge si nécessaire */
-  }
-  
-  fieldset hr {
-	border: none;
-	border-top: 2px solid rgb(59, 163, 255);
-  }
-  
-  p {
-	text-align: left;
-	margin: 10px 0;
-	line-height: 1.5;
-  }
-  
-  a {
-	color: #fff9f1;
-	font-weight: bold;
-	font-style: italic;
-	text-decoration: dotted;
-  }
-  
-  a:hover {
-	text-decoration: underline;
-  }
-  
-  table {
-	width: 100%;
-	border-collapse: collapse;
-  }
-  
-  td {
-	padding: 10px;
-	vertical-align: top;
-  }
-  
-  ul {
-	list-style-type: disc;
-	padding-left: 20px;
-  }
-  
-  li {
-	margin-bottom: 5px;
-  }
-  
-  .flex-container {
-	display: flex;
-	justify-content: space-between;
-	width: 80%; 
-	margin: 0 auto; 
-  }
-  
-  .flex-item {
-	flex-basis: 50%; 
-  }
-  
-  header fieldset {
-	width: 76.8%;
-	margin: 0 auto; 
-  }
-  
-  .competences {
-	max-width: 400px; /* Ajustez cette valeur selon vos besoins */
-  }
+    background-image: url('https://wallpapertag.com/wallpaper/full/9/2/5/156629-gorgerous-black-textured-background-1920x1200-for-lockscreen.jpg');
+    color: #FFDEAD;
+    font-family: Cambria, serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    color: #FFDEAD;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2, h3, h4, legend {
+    color: #FFDEAD;
+    font-family: Helvetica, sans-serif;
+}
+
+fieldset {
+    border: 2px solid rgb(59, 163, 255);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px; /* Ajustez la marge si nécessaire */
+}
+
+fieldset hr {
+    border: none;
+    border-top: 2px solid rgb(59, 163, 255);
+}
+
+p {
+    text-align: left;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+a {
+    color: #fff9f1;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: dotted;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%; 
+    margin: 0 auto; 
+}
+
+.flex-item {
+    flex-basis: 50%; 
+}
+
+header fieldset {
+    width: 76.8%;
+    margin: 0 auto; 
+}
+
+.competences {
+    max-width: 400px; /* Ajustez cette valeur selon vos besoins */
+}
+
+/* Media queries pour tablettes et smartphones */
+
+@media (max-width: 1024px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .flex-item {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Réduire la taille de la police pour les écrans plus petits */
+    }
+    .flex-item {
+        padding: 15px; /* Ajuster l'espacement des sections sur les écrans plus petits */
+    }
+    header fieldset {
+        width: 100%; /* Ajuster la largeur du fieldset dans l'en-tête pour les écrans plus petits */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em; /* Réduire encore la taille de la police pour les smartphones */
+    }
+    .flex-container {
+        width: 95%; /* Ajuster légèrement la largeur pour les smartphones */
+    }
+}
